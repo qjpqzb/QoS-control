@@ -11,7 +11,7 @@ This repository contains materials to reproduce the results for SC 2020 paper "T
 1. Please place the full data including raw data files and mesh files under "ADIOS/examples/C/global-array/larger_data", change the related directory in "test_xgc.c" and set up the decimation ratio in "test_xgc.xml"
 2. Once you run "test_xgc" to refactor the original data and write them to the storage pool, run "write_block_delta.py" to divide the delta into 50 blocks based on the gradient of reduced data in local storage.
 3. Run "qos_control.py" to achieve the QoS control for the application which can manage the I/O variation and increase the I/O performance. This will generate the refined data for each timestep based on the estimated noises in shared storage.
-4. The analysis of our evaluation is offline, "xgc_analysis.py", "astro2d_analysis.py" and "cfd_analysis.py" is used for the data analysis.
+4. The analysis of our evaluation is offline, "xgc_analysis.py", "astro2d_analysis.py" and "cfd_analysis.py" are used for the data analysis.
 5. When testing the load balancing, you can run "sampling.py" to repeatedly read one object, and collect the perceived bandwidth.
 6. You can run "./interference [checkpoint size (MB)] [checkpoint interval (s)]" in different client node to generate the periodic interferences.
 
