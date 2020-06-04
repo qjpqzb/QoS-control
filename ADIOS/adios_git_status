@@ -1,0 +1,17 @@
+GITLOG="Last commit on Fri May 31 23:29:58 2019 -0400 hash 0e5c4b1"
+read -d '' GITSTAT <<'_EOF_'
+On branch sirius_zq
+Your branch is up-to-date with 'origin/sirius_zq'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   examples/C/global-array/test_xgc.c
+	modified:   examples/C/global-array/test_xgc.xml
+	modified:   runconf
+	modified:   src/core/common_adios.c
+	modified:   src/public/adios.h
+	modified:   src/write/adios_sirius_adaptive.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+_EOF_
